@@ -1,0 +1,222 @@
+
+/* Desktop up to 1460px */
+@media screen and (max-width: 1460px) {
+  body { width: 100%; }
+}
+
+/* Small tablets to big tablets up to 1024px */
+@media screen and (max-width: 1024px) {
+  /* ------------------------------------- */
+  /* Header Section */
+  /* ------------------------------------- */
+  header { height: 755px; }
+
+  .flex-container {
+    height: 70%;
+    padding-top: 140px;
+    background:
+    url("/images/bg-pattern-1.svg") no-repeat -220px 80px,
+    url("/images/bg-pattern-2.svg") no-repeat 112% 255px,
+    var(--purple);
+  }
+
+  header h1 { font-size: 60px; }
+  
+  .image-hero {
+    width: 520px;
+    top: 52%;
+  }
+
+  /* ------------------------------------- */
+  /* Benefit Section */
+  /* ------------------------------------- */
+  .benefit-section { padding: 0px 44px 100px 44px; }
+
+  .benefit-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .benefit-card {
+    width: 63%;
+    position: relative;
+  }
+
+  .benefit-card::before {
+    position: absolute;
+    top: 90px;
+    left: -100px;
+    padding: 10px 18px;
+    font-size: 20px;
+  }
+
+  .benefit-title {
+    display: inline-block;
+    padding-top: 36px;
+    font-size: 28px;
+  }
+
+  .benefit-container .benefit-card:first-child .benefit-title { padding-top: 0px; }
+  
+  .benefit-container .benefit-card:first-child::before { top: 30px; }
+
+  .benefit-para { font-size: 16px; }
+
+  /* ------------------------------------- */
+  /* Access Section */
+  /* ------------------------------------- */
+  .access-section { 
+    padding-top: 112px;
+    padding-left: 10px;
+  }
+
+  .access-content-box {
+    padding: 48px;
+    width: 500px;
+    height: 390px;
+    left: -105px;
+  }
+
+  .access-title { font-size:45px; }
+
+  .acceses-para { font-size: 16px; }
+
+  .image-founder { width: 280px; }
+
+  .access-content-pattern {
+    width: 210px;
+    top: 295px;
+    left: 275px;
+  }
+
+  /* ------------------------------------- */
+  /* Footer Section */
+  /* ------------------------------------- */
+  footer { padding: 70px 0px; }
+}
+
+
+/* Small phones to small tablets up to 767px */
+@media screen and (max-width: 767px) {
+  /* ------------------------------------- */
+  /* General Styles */
+  /* ------------------------------------- */
+  .flex-container,
+  .benefit-section {
+    border-bottom-left-radius: 55% 10%;
+    border-bottom-right-radius: 55% 10%;
+  }
+  
+  .btn-full { font-size: 16px; }
+
+  /* ------------------------------------- */
+  /* Header Section */
+  /* ------------------------------------- */
+  header { height: 650px; }
+
+  .flex-container {
+    height: 75%;
+    background: none, none, var(--purple);
+  }
+
+  header h1 {
+    width: 400px;
+    font-size: 48px;
+  }
+  
+  .image-hero {
+    width: 330px;
+    top: 59.5%;
+  }
+
+  /* ------------------------------------- */
+  /* Benefit Section */
+  /* ------------------------------------- */
+  .benefit-section { padding: 0px 20px 50px 20px; }
+
+  .benefit-container { text-align: center; }
+
+  .benefit-card {
+    width: 55%;
+    position: static;
+  }
+
+  .benefit-card::before {
+    display: block;
+    width: fit-content;
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+  }
+
+  .benefit-title {
+    padding: 22px 0px;
+    font-size: 24px;
+  }
+
+  .benefit-container .benefit-card:first-child .benefit-title { padding-top: 36px; }
+
+  .benefit-para { margin-bottom: 22px; }
+
+  /* ------------------------------------- */
+  /* Access Section */
+  /* ------------------------------------- */
+  .access-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .access-content-box {
+    width: 335px;
+    position: relative;
+    top: -52px;
+    left: auto;
+    padding: 32px;
+    text-align: center;
+  }
+  
+  .access-title { font-size: 32px; }
+
+  .access-img-box {
+    position: static;
+    left: auto;
+  }
+
+  .access-content-pattern { display: none; }
+}
+
+/* Small phones up to 480px */
+@media screen and (max-width: 480px) {
+  /* ------------------------------------- */
+  /* General Styles */
+  /* ------------------------------------- */
+  .flex-container,
+  .benefit-section {
+    border-bottom-left-radius: 55% 5%;
+    border-bottom-right-radius: 55% 5%;
+  }
+
+  /* ------------------------------------- */
+  /* Benefit Section */
+  /* ------------------------------------- */
+  .benefit-card { width: 80%; }
+}
+
+/* Small phones up to 390px */
+@media screen and (max-width: 390px) {
+  /* ------------------------------------- */
+  /* Nav Section */
+  /* ------------------------------------- */
+  .main-nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-light {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}
